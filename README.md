@@ -1,4 +1,4 @@
-# Work-Scheduler1
+# Work-Scheduler1 
 
 ## Description 
 As a developer, I have created a work-day schedule for busy employers to manage their time effectively. 
@@ -7,7 +7,8 @@ As a developer, I have created a work-day schedule for busy employers to manage 
 -html 
 -javascript 
 -css
--powered by jquery 
+-day.js
+-powered by jquery  
 
 #### Demo
 -- screen shot of landing page goes here --
