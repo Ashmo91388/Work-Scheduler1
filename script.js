@@ -6,7 +6,6 @@ var todaysDate = dayjs();
 $('#currentDay').text(todaysDate);
 
 
-
 $(document).ready(function () {
 
   // TODO: Add a listener for click events on the save button. This code should
@@ -40,7 +39,8 @@ $(document).ready(function () {
       if (blockTime < timeNow) {
         $(this).removeClass("future");
         $(this).removeClass("present");
-        $(this).addClass("past");
+        $(this).addClass("past");        
+        
       }
       else if (blockTime === timeNow) {
         $(this).removeClass("past");
@@ -58,7 +58,6 @@ $(document).ready(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  $("#hour8 .description").val(localStorage.getItem("hour8"));
   $("#hour9 .description").val(localStorage.getItem("hour9"));
   $("#hour10 .description").val(localStorage.getItem("hour10"));
   $("#hour11 .description").val(localStorage.getItem("hour11"));
