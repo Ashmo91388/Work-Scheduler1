@@ -3,12 +3,12 @@
 // in the html.
 
 var todaysDate = dayjs();
-$('#currentDay').text(todaysDate);
+$('#currentDay').text(dayjs().format('dddd, MMM D, YYYY'));
 
 
 $(document).ready(function () {
 
-  var presentHour = dayjs().hour();
+  // var presentHour = dayjs().hour();
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -17,10 +17,10 @@ $(document).ready(function () {
 
   $(".saveBtn").on("click", function () {
     console.log('the click funct works')
-    var text = $(this).siblings(".color-time-block").val();
+    var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
     localStorage.setItem(time, text); //save info to the local storage 
-  });
+  })
 
   // $(".saveBtn").click(function (event) {
   //   event.preventDefault();
@@ -83,5 +83,5 @@ $(document).ready(function () {
 
   // TODO: Add code to display the current date in the header of the page.
   trackCurrentTime();
-});
+})
 // });
