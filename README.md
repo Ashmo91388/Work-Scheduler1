@@ -1,4 +1,4 @@
-# Work-Scheduler1 :computer: :calendar:
+# Work-Day-Scheduler1 :computer: :calendar:
 
 ## Description :closed_book:
 As a developer, I have created a work-day schedule for busy employees to manage their time effectively. 
